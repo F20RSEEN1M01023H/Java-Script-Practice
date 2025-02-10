@@ -29,8 +29,51 @@ let score ="45abc"
 let someNumber="33";
 
 let someString=String(someNumber);
-console.log(typeof someString);
-console.log(someNumber);
+// console.log(typeof someString);
+// console.log(someNumber);
+
+
+// *******************Operations*******************
+let value = 3;
+let negValue=-value;
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2*2);
+// console.log(2-2);
+// console.log(2**5);
+// console.log(2/5);
+// console.log(2%5);
+
+let str1="Hammad";
+let str2=" Ashraf";
+
+let str3=str1+str2;
+
+// console.log(str3)
+
+// console.log(1+"2");
+// console.log("2"+1);
+// console.log("1"+2+2);
+// console.log(1+2+"2");
+
+// console.log(3 + 5 * 4 % 3);
+
+let num1,num2,num3
+
+num1=num2=num3=2+2
+
+let gameCounter=100
+gameCounter++;
+console.log(gameCounter);
+
+
+
+
+
+
+
+
 
 
 
