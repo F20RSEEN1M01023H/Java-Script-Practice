@@ -43,3 +43,26 @@ const myFunction = function(){
 console.log(typeof outsideTemp);
 
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (permitive), Heep(Non permitive)
+
+let hammad="hammad ashraf"
+
+let anotherName=hammad
+anotherName="awais"
+
+console.log(anotherName)
+console.log(hammad)
+
+let userOne = {
+    email:"hammad@gmail.com",
+    password:"Hammad23"
+}
+
+let UserTwo = userOne
+
+userTwo = "hammadupdated@gmail.com"
+
+console.log(userOne.email)
+console.log(UserTwo.email)
