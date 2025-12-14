@@ -1,18 +1,31 @@
-let clicks = 0;
+// let clicks = 0; beacuse now we store this button into local storage
+
 const button = document.getElementById("btn");
 const displayCount = document.getElementById("count");
 
+let clicks = parseInt(localStorage.getItem("clickCount")) || 0;
+let isDisabled = localStorage.getItem("isDisabled") === "true";
+displayCount.textContent = `Button Clicked ${clicks} times`;
+button.disabled = isDisabled;
+
 button.addEventListener("click", () => {
   clicks++;
-  displayCount.textContent = `Button clicked ${clicks} times`;
-  if (clicks >= 5 && !button.disabled) {
+  displayCount.textContent = `Button Clicked ${clicks} times`;
+  localStorage.setItem("clickCount", clicks);
+
+  if (clicks === 5 && !button.disabled) {
     button.disabled = true;
-    alert("button is only 5 times clicked and then disabled");
+    localStorage.setItem("isDisabled", "true");
+    alert("Button disabled after 5 clicks");
+
+    // we need 10 sec wait to reenable the button
 
     setTimeout(() => {
-      clicks = 0;
       button.disabled = false;
-      displayCount.textContent = `Button clicked ${clicks} times`;
+      clicks = 0;
+      displayCount.textContent = `Button Clicked ${clicks} times`;
+      localStorage.setItem("clickCout", clicks);
+      localStorage.setItem("isDisabled", "false");
     }, 10000);
   }
 });
