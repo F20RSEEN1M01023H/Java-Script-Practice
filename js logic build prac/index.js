@@ -5,9 +5,15 @@ const displayCount = document.getElementById("count");
 button.addEventListener("click", () => {
   clicks++;
   displayCount.textContent = `Button clicked ${clicks} times`;
-  if (clicks >= 5) {
+  if (clicks >= 5 && !button.disabled) {
     button.disabled = true;
     alert("button is only 5 times clicked and then disabled");
+
+    setTimeout(() => {
+      clicks = 0;
+      button.disabled = false;
+      displayCount.textContent = `Button clicked ${clicks} times`;
+    }, 10000);
   }
 });
 
