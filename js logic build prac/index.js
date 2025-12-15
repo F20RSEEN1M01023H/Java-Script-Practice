@@ -122,3 +122,31 @@ for (let i = 0; i < marks.length; i++) {
     console.log(`Passed Marks: ${marks[i]}`);
   }
 }
+
+// function with greeting
+
+function greet(name) {
+  console.log(`Hello, ${name}! Welcome aboard.`);
+}
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+greet("Diana");
+
+function greet(name) {
+  console.log(`Hello ${name} Welcome to pakistan.`);
+}
+
+greet("Hammad");
+
+// Function for takes user name and password and checck login
+function login(username, passoword) {
+  const validUsername = "user1234";
+  const validPassword = "pass1234";
+  if (username === validUsername && passoword === validPassword) {
+    console.log("login successful");
+  } else {
+    console.log("login failed due to wrong credentials");
+  }
+}
+login("user1234", "pass1234");
