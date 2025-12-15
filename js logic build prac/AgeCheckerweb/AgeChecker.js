@@ -7,11 +7,11 @@ checkbtn.addEventListener("click", () => {
   if (age < 0 || isNaN(age)) {
     ageDisplay.textContent = "please enter a valid age.";
   }
-  if (age >= 16 && age < 18) {
-    ageDisplay.textContent = "You are eligible for a learners permit.";
-  } else if (age >= 18) {
+  if (age >= 18) {
     ageDisplay.textContent = "you are eligible for voting.";
+  } else if (age >= 16) {
+    ageDisplay.textContent = "You are eligible for a learners permit.";
   } else {
-    ageDisplay.textContent = "you go to school.";
+    ageDisplay.textContent = "You are eligible to go to school.";
   }
 });
