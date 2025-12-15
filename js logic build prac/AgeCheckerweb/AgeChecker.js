@@ -4,7 +4,6 @@ const ageDisplay = document.getElementById("ageDisplay");
 
 checkbtn.addEventListener("click", () => {
   const age = parseInt(input.value);
-  ageDisplay.textContent = age;
   if (age < 0 || isNaN(age)) {
     ageDisplay.textContent = "please enter a valid age.";
   }
