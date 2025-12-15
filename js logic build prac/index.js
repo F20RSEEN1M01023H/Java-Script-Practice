@@ -83,3 +83,42 @@ let fruits = ["Apple", "Banana", "Mango", "Orange"];
 for (let k = 0; k < fruits.length; k++) {
   console.log(`Fruit: ${fruits[k]}`);
 }
+
+// Show days of the week using a loop.
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+for (let e = 0; e < days.length; e++) {
+  console.log(`Day: ${days[e]}`);
+}
+
+// if we want to show output array like the Day 1 and etc.
+for (let d = 1; d <= 7; d++) {
+  console.log(`Day ${d}`);
+}
+
+// 🧩 Real-World Problem: Salary Filter
+
+// 👉 Print salaries above 30,000
+// From 10,000 to 50,000
+
+for (let i = 30001; i <= 50000; i++) {
+  console.log(`Salary: ${i}`);
+}
+
+// Real-World Problem: Passed Students
+// let marks = [45, 67, 80, 32, 90];
+
+// 👉 Print only marks ≥ 50
+let marks = [45, 67, 80, 32, 90];
+for (let i = 0; i < marks.length; i++) {
+  if (marks[i] >= 50) {
+    console.log(`Passed Marks: ${marks[i]}`);
+  }
+}
