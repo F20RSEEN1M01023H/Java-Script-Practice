@@ -70,3 +70,10 @@ while (i <= 5) {
   console.log(`While Loop Iteration number: ${i}`);
   i++;
 }
+
+// by using do while loop
+let j = 1;
+do {
+  console.log(`Do While Loop Iteration number: ${j}`);
+  j++;
+} while (j <= 5);
