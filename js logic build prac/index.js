@@ -150,3 +150,13 @@ function login(username, passoword) {
   }
 }
 login("user1234", "pass1234");
+
+// generate table of multiplication
+function generateTable(number) {
+  console.log(`Multiplication Table for ${number}:`);
+  for (let i = 1; i <= 10; i++) {
+    const result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
+  }
+}
+generateTable(7);
