@@ -77,3 +77,9 @@ do {
   console.log(`Do While Loop Iteration number: ${j}`);
   j++;
 } while (j <= 5);
+
+// Arrays
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+for (let k = 0; k < fruits.length; k++) {
+  console.log(`Fruit: ${fruits[k]}`);
+}
