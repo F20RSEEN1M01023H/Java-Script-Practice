@@ -221,3 +221,25 @@ for (let i = 1; i <= 30; i++) {
     console.log(i);
   }
 }
+
+// Count how many numbers are divisible by 3 (1–30)
+let count = 0;
+
+for (let i = 1; i <= 30; i++) {
+  if (i % 3 === 0) {
+    count++;
+  }
+}
+
+console.log(count);
+
+// Count how many numbers are divisible by 4 and 5 both (1–50)
+let count2 = 0;
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 4 === 0 && i % 5 === 0) {
+    count++;
+  }
+}
+
+console.log(count2);
