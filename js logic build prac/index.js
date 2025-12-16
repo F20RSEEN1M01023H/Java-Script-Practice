@@ -151,7 +151,7 @@ function login(username, passoword) {
 }
 login("user1234", "pass1234");
 
-// generate table of multiplication
+// generate table of multiplication of 7
 function generateTable(number) {
   console.log(`Multiplication Table for ${number}:`);
   for (let i = 1; i <= 10; i++) {
@@ -160,3 +160,24 @@ function generateTable(number) {
   }
 }
 generateTable(7);
+
+// genrateTable of 5
+function genrateTable(num) {
+  console.log(`Multiplication Table for ${num};`);
+  for (let i = 1; i <= 10; i++) {
+    const result = num * i;
+    console.log(`${num} x ${i} = ${result}`);
+  }
+}
+
+genrateTable(5);
+
+// genrateTable of 5 in reverse order
+function genrateTableReverse(num) {
+  console.log(`Multiplication of the Table for ${num} in reverse Order:`);
+  for (let i = 10; i >= 1; i--) {
+    const result = num * i;
+    console.log(`${num} x ${i} = ${result}`);
+  }
+}
+genrateTableReverse(5);
