@@ -180,7 +180,15 @@ function genrateTableReverse(num) {
     console.log(`${num} x ${i} = ${result}`);
   }
 }
-genrateTableReverse(5);
+genrateTableReverse(9);
+function genrateTableReverse(num) {
+  console.log(`Multiplication of the Table for ${num} in reverse Order:`);
+  for (let i = 10; i >= 1; i--) {
+    const result = num * i;
+    console.log(`${num} x ${i} = ${result}`);
+  }
+}
+genrateTableReverse(9);
 
 // print even numbers from 1 to 20
 
